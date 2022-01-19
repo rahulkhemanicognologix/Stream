@@ -46,7 +46,7 @@ public class StreamsCollectionOperations {
         List<Person> result =
                 persons
                         .stream()
-                        .filter(p -> p.name.startsWith("P"))
+                        .filter(e -> e.name.startsWith("P"))
                         .collect(Collectors.toList());
 
         System.out.println(result);

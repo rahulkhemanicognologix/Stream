@@ -56,7 +56,9 @@ public class StreamsBasic {
         List<String> myList =
                 Arrays.asList("a1", "a2", "b1", "c2", "c1");
 
-        myList.stream().sorted().forEach(System.out::println);
+        myList.stream()
+                .sorted().
+                forEach(System.out::println);
         System.out.println("--------------");
     }
     @Test
